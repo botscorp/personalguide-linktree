@@ -4,34 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Guide — Tu guía personal en WhatsApp</title>
-  <meta name="description" content="Asistentes personales de IA por WhatsApp. Acompañamiento real, 24/7, a tu lado." />
+  <meta name="description" content="Asistentes personales de IA por WhatsApp. Acompañamiento real, todos los días, a tu lado." />
   <meta property="og:title" content="Personal Guide" />
   <meta property="og:description" content="Asistentes personales de IA por WhatsApp." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://personalguide.chat" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>" />
+  <meta property="og:image" content="https://personalguide.chat/logo-q7.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo-q7.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo-q7.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo-q7.png" />
+  <link rel="shortcut icon" href="/logo-q7.png" />
+
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            q7green: {
+              50:  '#f0f9f3',
+              100: '#dcf0e3',
+              200: '#b8e1c8',
+              500: '#4DAD7A',
+              600: '#3e9266',
+              700: '#316f4f'
+            },
+            q7coral: { 400: '#f5896e', 500: '#f4725e' }
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    .gradient-bg {
+    .page-bg {
       background:
-        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(77,173,122,0.25), transparent),
-        radial-gradient(ellipse 60% 40% at 50% 120%, rgba(244,114,94,0.15), transparent),
-        #0a0e0c;
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(244,114,94,0.12), transparent),
+        radial-gradient(ellipse 90% 60% at 50% 100%, rgba(77,173,122,0.10), transparent),
+        #fbfaf6;
+    }
+    .soft-card {
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px -8px rgba(77,173,122,0.10);
     }
   </style>
 </head>
-<body class="gradient-bg min-h-screen text-white antialiased">
+<body class="page-bg min-h-screen text-slate-800 antialiased font-sans">
 
-  <main class="max-w-md mx-auto px-6 pt-16 pb-12">
+  <main class="max-w-md mx-auto px-6 pt-14 pb-12">
 
     <!-- Header / brand -->
     <header class="text-center mb-10">
-      <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-700 text-3xl mb-4 shadow-lg shadow-emerald-900/40">
-        🧭
-      </div>
-      <h1 class="text-2xl font-bold tracking-tight">Personal Guide</h1>
-      <p class="text-sm text-white/60 mt-2 leading-relaxed">
+      <img src="/logo-q7.png" alt="Personal Guide" class="w-20 h-20 mx-auto mb-5 rounded-2xl soft-card" />
+      <h1 class="text-2xl font-bold tracking-tight text-slate-900">Personal Guide</h1>
+      <p class="text-sm text-slate-500 mt-2 leading-relaxed">
         Asistentes personales de IA por WhatsApp.<br />
         Acompañamiento real, a tu lado.
       </p>
@@ -41,42 +70,31 @@
     <nav class="space-y-3">
 
       <a href="https://q7.personalguide.chat" class="group block">
-        <div class="rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur border border-white/10 hover:border-emerald-400/50 transition px-5 py-4 flex items-center gap-4">
-          <div class="text-2xl">🔥</div>
-          <div class="flex-1">
-            <div class="font-semibold">Personal Guide Q7</div>
-            <div class="text-xs text-white/50">Adelgaza con tu guía personal · 7 días</div>
+        <div class="rounded-2xl bg-white hover:bg-q7green-50 border border-slate-200 hover:border-q7green-300 transition px-5 py-4 flex items-center gap-4 soft-card">
+          <div class="text-2xl">🌱</div>
+          <div class="flex-1 text-left">
+            <div class="font-semibold text-slate-900">Personal Guide Q7</div>
+            <div class="text-xs text-slate-500 mt-0.5">Adelgaza con tu guía personal · ciclos de 7 días</div>
           </div>
-          <div class="text-white/30 group-hover:text-emerald-400 transition">→</div>
+          <div class="text-slate-300 group-hover:text-q7green-600 transition">→</div>
         </div>
       </a>
 
-      <a href="https://theos.guide" class="group block">
-        <div class="rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur border border-white/10 hover:border-emerald-400/50 transition px-5 py-4 flex items-center gap-4">
+      <a href="https://www.theos.guide/" class="group block">
+        <div class="rounded-2xl bg-white hover:bg-q7green-50 border border-slate-200 hover:border-q7green-300 transition px-5 py-4 flex items-center gap-4 soft-card">
           <div class="text-2xl">📿</div>
-          <div class="flex-1">
-            <div class="font-semibold">Theos Guide</div>
-            <div class="text-xs text-white/50">Tu guía espiritual diaria</div>
+          <div class="flex-1 text-left">
+            <div class="font-semibold text-slate-900">Theos Guide</div>
+            <div class="text-xs text-slate-500 mt-0.5">Tu guía espiritual diaria</div>
           </div>
-          <div class="text-white/30 group-hover:text-emerald-400 transition">→</div>
-        </div>
-      </a>
-
-      <a href="https://www.facebook.com/<TODO_FB_PAGE_Q7>" class="group block">
-        <div class="rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur border border-white/10 hover:border-emerald-400/50 transition px-5 py-4 flex items-center gap-4">
-          <div class="text-2xl">📘</div>
-          <div class="flex-1">
-            <div class="font-semibold">Facebook · Q7</div>
-            <div class="text-xs text-white/50">Síguenos en Facebook</div>
-          </div>
-          <div class="text-white/30 group-hover:text-emerald-400 transition">→</div>
+          <div class="text-slate-300 group-hover:text-q7green-600 transition">→</div>
         </div>
       </a>
 
     </nav>
 
     <!-- Footer -->
-    <footer class="text-center mt-16 text-xs text-white/30">
+    <footer class="text-center mt-16 text-xs text-slate-400">
       <p>© <span id="year"></span> Botscorp · personalguide.chat</p>
     </footer>
 
