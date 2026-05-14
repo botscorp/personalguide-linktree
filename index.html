@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Guide — Tu guía personal en WhatsApp</title>
+  <meta name="description" content="Asistentes personales de IA por WhatsApp. Acompañamiento real, 24/7, a tu lado." />
+  <meta property="og:title" content="Personal Guide" />
+  <meta property="og:description" content="Asistentes personales de IA por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://personalguide.chat" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .gradient-bg {
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(77,173,122,0.25), transparent),
+        radial-gradient(ellipse 60% 40% at 50% 120%, rgba(244,114,94,0.15), transparent),
+        #0a0e0c;
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen text-white antialiased">
+
+  <main class="max-w-md mx-auto px-6 pt-16 pb-12">
+
+    <!-- Header / brand -->
+    <header class="text-center mb-10">
+      <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-700 text-3xl mb-4 shadow-lg shadow-emerald-900/40">
+        🧭
+      </div>
+      <h1 class="text-2xl font-bold tracking-tight">Personal Guide</h1>
+      <p class="text-sm text-white/60 mt-2 leading-relaxed">
+        Asistentes personales de IA por WhatsApp.<br />
+        Acompañamiento real, a tu lado.
+      </p>
+    </header>
+
+    <!-- Links -->
+    <nav class="space-y-3">
+
+      <a href="https://q7.personalguide.chat" class="group block">
+        <div class="rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur border border-white/10 hover:border-emerald-400/50 transition px-5 py-4 flex items-center gap-4">
+          <div class="text-2xl">🔥</div>
+          <div class="flex-1">
+            <div class="font-semibold">Personal Guide Q7</div>
+            <div class="text-xs text-white/50">Adelgaza con tu guía personal · 7 días</div>
+          </div>
+          <div class="text-white/30 group-hover:text-emerald-400 transition">→</div>
+        </div>
+      </a>
+
+      <a href="https://theos.guide" class="group block">
+        <div class="rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur border border-white/10 hover:border-emerald-400/50 transition px-5 py-4 flex items-center gap-4">
+          <div class="text-2xl">📿</div>
+          <div class="flex-1">
+            <div class="font-semibold">Theos Guide</div>
+            <div class="text-xs text-white/50">Tu guía espiritual diaria</div>
+          </div>
+          <div class="text-white/30 group-hover:text-emerald-400 transition">→</div>
+        </div>
+      </a>
+
+      <a href="https://www.facebook.com/<TODO_FB_PAGE_Q7>" class="group block">
+        <div class="rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur border border-white/10 hover:border-emerald-400/50 transition px-5 py-4 flex items-center gap-4">
+          <div class="text-2xl">📘</div>
+          <div class="flex-1">
+            <div class="font-semibold">Facebook · Q7</div>
+            <div class="text-xs text-white/50">Síguenos en Facebook</div>
+          </div>
+          <div class="text-white/30 group-hover:text-emerald-400 transition">→</div>
+        </div>
+      </a>
+
+    </nav>
+
+    <!-- Footer -->
+    <footer class="text-center mt-16 text-xs text-white/30">
+      <p>© <span id="year"></span> Botscorp · personalguide.chat</p>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
